@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
-import { FiguresWrapper } from './Figures.styled';
+import { FigureWrapper } from './Figures.styled';
 
 interface FiguresProps {}
 
-const Figures: FC<FiguresProps> = () => (
- <FiguresWrapper>
-    Figures Component
- </FiguresWrapper>
+const Figure: FC<FiguresProps> = () => (
+ <FigureWrapper>
+    <p>Figure</p>
+ </FigureWrapper>
 );
 
-export default Figures;
+export default Figure;

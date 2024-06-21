@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './components/App/App';
 import 'the-new-css-reset';
+import Figure from './components/Figures/Figures';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -11,6 +12,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <h1>Figure and styled-components</h1>
+    <Figure/>
     {/* <App/> */}
   </React.StrictMode>
 );
