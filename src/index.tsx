@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <h1>Figure and styled-components</h1>
-    <App/>
+    {/* <App/> */}
   </React.StrictMode>
 );
 
