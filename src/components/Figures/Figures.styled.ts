@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import _default from 'styled-components/dist/utils/createWarnTooManyClasses';
+import {CenterPosition} from './General.styled';
 
 interface FigureProps {
     bgColor?: string;
@@ -25,7 +26,7 @@ const _defaultRect: RectangleProps = {
     height: 100,
 }
 
-const FigureWrapper = styled.div<FigureProps>`
+const FigureWrapper = styled(CenterPosition)<FigureProps>`
     background-color: ${props => props.bgColor || 'grey'};
     border: 1px solid black;
     margin: 5px;
