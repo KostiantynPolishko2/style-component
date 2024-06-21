@@ -15,7 +15,7 @@ interface RectangleProps extends FigureProps {
 }
 
 const _defaultSquare: SquareProps = {
-    bgColor: 'greeyellow',
+    bgColor: 'magenta',
     size: 100,
 }
 
@@ -29,6 +29,12 @@ const FigureWrapper = styled.div<FigureProps>`
     background-color: ${props => props.bgColor || 'grey'};
     border: 1px solid black;
     margin: 5px;
+    &:hover {
+        box-shadow: 0px 0px 10px 5px rgb(0, 205, 0);
+    }
+    &:active {
+        box-shadow: 0px 0px 10px 5px rgb(0, 205, 0) inset;
+    }
 `;
 
 export const Square = styled(FigureWrapper)<SquareProps>`
