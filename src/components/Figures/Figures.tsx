@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
-import { FigureWrapper } from './Figures.styled';
+import { Square } from './Figures.styled';
 
 interface FiguresProps {}
 
 const Figure: FC<FiguresProps> = () => (
- <FigureWrapper>
+ <Square size={100} bgColor='red'>
     <p>Figure</p>
- </FigureWrapper>
+ </Square>
 );
 
 export default Figure;
