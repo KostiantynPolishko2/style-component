@@ -33,14 +33,14 @@ const FigureWrapper = styled(CenterPosition)<FigureProps>`
     border: 1px solid black;
     margin: 5px;
     transition: all 1000ms linear 400ms;
+    animation: ${move_up_down} 1s linear 100ms infinite paused;
+
     &:hover {
         box-shadow: 0px 0px 10px 5px rgb(0, 205, 0);
-        animation: ${rotate0_135_0} 8s linear 100ms infinite;
+        animation: ${rotate0_135_0} 8s linear 100ms infinite running;
     }
     &:active {
         box-shadow: 0px 0px 10px 5px rgb(0, 205, 0) inset; 
-        position: relative;
-        animation: ${move_up_down} 1s linear 100ms infinite;
     }
 `;
 
